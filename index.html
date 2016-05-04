@@ -213,15 +213,19 @@
 
 });
     
-    deeplink.setup({
-        iOS: {
-            storeUrl: "https://itunes.apple.com/br/app/everypost-para-o-twitter-facebook/id572530903?mt=8",
-        }
-    });
+    // deeplink.setup({
+    //     iOS: {
+    //         storeUrl: "https://itunes.apple.com/br/app/everypost-para-o-twitter-facebook/id572530903?mt=8",
+    //     }
+    // });
     
-    window.onload = function() {
-    deeplink.open("blicup://1234");
-    } 
+    // window.onload = function() {
+    // deeplink.open("blicup://1234");
+    // } 
+    window.location = 'blicup://';
+    setTimeout(function() {
+    window.location = 'itms-apps://itunes.apple.com/br/app/everypost-para-o-twitter-facebook/id572530903?mt=8'
+    }, 250);
     </script>
     
     <meta property="al:ios:url" content="blicup://" />
